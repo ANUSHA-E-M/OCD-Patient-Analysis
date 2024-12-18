@@ -1,5 +1,3 @@
-![Screenshot (35)](https://github.com/user-attachments/assets/47f502b4-d476-407a-9dd1-f22bee8a68b8)# OCD Patient Data Analysis
-
 ## Table of Content
   - [Project Overview](#Project-Overview)
   - [Data Scources](#Data-Scources)
@@ -176,6 +174,8 @@ model_com=ols('Q("Y-BOCS Score (Compulsions)") ~ Q("Compulsion Type")', data=df_
 annova_table_com=sm.stats.anova_lm(model_com,typ=2)
 print(annova_table_com)
 ~~~
+![Screenshot (40)](https://github.com/user-attachments/assets/f2de55ac-49d8-46b5-9519-ac9fb1278d9b)
+
 ~~~python
 #Performing Post Hoc Testing
 
@@ -184,7 +184,7 @@ print("\nResult of Post Hoc Testing for Compulsion Score:\n")
 tukey_results_com = pairwise_tukeyhsd(endog=df_patient['Y-BOCS Score (Compulsions)'], groups=df_patient['Compulsion Type'], alpha=0.05)
 print(tukey_results_com)
 ~~~
-![Screenshot (40)](https://github.com/user-attachments/assets/f2de55ac-49d8-46b5-9519-ac9fb1278d9b)
+![Screenshot (41)](https://github.com/user-attachments/assets/8226179f-5596-4343-980c-a258a7fe0c60)
 
 **Conclusion**:
     - The Tukey HSD post-hoc analysis revealed a significant difference in compulsion score between the 'Checking' and 'Praying' group scoring higher. 
