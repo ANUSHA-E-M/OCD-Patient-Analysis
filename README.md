@@ -32,4 +32,7 @@ In the initial data preparation phase, the following steps were performed:
         o Utilizing the Yale-Brown Obsessive Compulsive Scale (Y-BOCS) score to gauge the severity of OCD symptoms among the population, which can inform treatment efficacy and degree of impact on patients daily lives.
     - Co-occuring Mental Health Conditions:
         o Investigating the presence of other mental health disorders that often accompany OCD, such as anxiety disorders and depression, understanding these relationships can help in designing more comrehensive treatment plans.
+
+### Data Analysis
+~~~python
   
