@@ -1,5 +1,8 @@
 # OCD Patient Data Analysis
 
+## Table of Content
+  - [Project Overview](#Project-Overview)
+
 ### Project Overview
 
 This data analysis project is focused on uncovering insights in the trends associated with patients diagnosed with Obsession-Compulsion Disorder (OCD) through a detailed examination of a comprehensive dataset comprising 1500 individuals.
@@ -18,7 +21,7 @@ The dataset used in this analysis is fictional and contains 1,500 patients diagn
 ### Data cleaning and preparation
 
 In the initial data preparation phase, the following steps were performed:
-  1. Data inspection: Reviewed the dataset for missing or inconsistent values.
+  1. **Data inspection**: Reviewed the dataset for missing or inconsistent values.
      - Handling Inconsitent Data in Categorical Column
   ~~~python
         #Function to convert various values of degree graduate into single value "Graduate"
@@ -30,7 +33,7 @@ def graduate(degree):
 df_patient["Education Level"]=df_patient["Education Level"].apply(graduate)
 df_patient["Education Level"].unique()
  ~~~
-  2. Handling missing values: Addressed missing values in relevant columns, particularly in demographic and clinical information.
+  2.**Handling missing values**: Addressed missing values in relevant columns, particularly in demographic and clinical information.
   ~~~python
 #Previous Diagnoses and Medications are having more missing values.
 #Create indicators for missing values before imputation
@@ -47,7 +50,7 @@ df_patient.fillna({"Medications": mode_medications},inplace=True)
 #Apply one-hot encoding to the categorical variables
 df_patient_encoded=pd.get_dummies(df_patient,columns=["Previous Diagnoses","Medications"],drop_first=True)
 ~~~
-3. Data transformation: Reformatted the columns for consistency, such as ensuring all dates were in a standard format, and transformed the Y-BOCS score into categorical ranges.
+3. **Data transformation**: Reformatted the columns for consistency, such as ensuring all dates were in a standard format, and transformed the Y-BOCS score into categorical ranges.
 ~~~python
      #Date variable in Object format converting that to 'DateTime'
 df_patient['OCD Diagnosis Date']=pd.to_datetime(df_patient['OCD Diagnosis Date'])
@@ -55,7 +58,7 @@ df_patient['OCD Diagnosis Date']=pd.to_datetime(df_patient['OCD Diagnosis Date']
 
 ### Exploratory Data Analysis
 #### KEY AREA OF EXPLORATION WITHIN THIS DATASET INCLUDE:
-    - Demographic Characteristics:
+    - Demographic Characteristics**:
         o Understanding the age, gender and geographical distribution of individuals diagnosed with OCD to identify potential patterns and differences across populations.
     - Duration of Symptoms:
         o Analysing how long patients have been experiencing OCD Symptoms. This information can provide valuable context for treatment approaches and understanding the chronicity of the disorder.
@@ -167,7 +170,7 @@ print("\nResult of Post Hoc Testing for Compulsion Score:\n")
 tukey_results_com = pairwise_tukeyhsd(endog=df_patient['Y-BOCS Score (Compulsions)'], groups=df_patient['Compulsion Type'], alpha=0.05)
 print(tukey_results_com)
 ~~~
-CONCLUSION:
+**Conclusion**:
     - The Tukey HSD post-hoc analysis revealed a significant difference in compulsion score between the 'Checking' and 'Praying' group scoring higher. 
     - No meaningful differences among the other groups (Counting, Ordering and Washing)
     - These findings highlights the uniques influence of the 'Praying' compulsion type and further analysis.
