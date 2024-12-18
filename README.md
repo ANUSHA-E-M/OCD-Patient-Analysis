@@ -184,7 +184,7 @@ print("\nResult of Post Hoc Testing for Compulsion Score:\n")
 tukey_results_com = pairwise_tukeyhsd(endog=df_patient['Y-BOCS Score (Compulsions)'], groups=df_patient['Compulsion Type'], alpha=0.05)
 print(tukey_results_com)
 ~~~
-![Screenshot (41)](https://github.com/user-attachments/assets/8226179f-5596-4343-980c-a258a7fe0c60)
+![Screenshot (41)](https://github.com/user-attachments/assets/577c5a66-f3de-490e-ad15-492cdc8f5d64)
 
 **Conclusion**:
     - The Tukey HSD post-hoc analysis revealed a significant difference in compulsion score between the 'Checking' and 'Praying' group scoring higher. 
