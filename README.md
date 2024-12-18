@@ -2,6 +2,13 @@
 
 ## Table of Content
   - [Project Overview](#Project-Overview)
+  - [Data Scources](#Data-Scources)
+  - [Tools](#Tools)
+  - [Data cleaning and preparation](#Data-cleaning-and-preparation)
+  - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
+  - [Findings](#Findings)
+  - [Recommandations](#Recommandations)
+  - [Limitations](#Limitations)
 
 ### Project Overview
 
@@ -67,7 +74,6 @@ df_patient['OCD Diagnosis Date']=pd.to_datetime(df_patient['OCD Diagnosis Date']
     - Co-occuring Mental Health Conditions:
         o Investigating the presence of other mental health disorders that often accompany OCD, such as anxiety disorders and depression, understanding these relationships can help in designing more comrehensive treatment plans.
 
-### Data Analysis
 #### OCD Patient Diagnosis over a Time
 ~~~python
 #Grouping Data by Diagnosis Year and Month
@@ -214,7 +220,7 @@ sns.heatmap(filtered_corr, annot=True, fmt='.3f', cmap='coolwarm', square=True, 
 plt.title("Correlation Heatmap of Clinical Factors and Compulsion Scores\n")
 plt.show()
 ~~~
-##### Correlation Analysis Summary
+**Correlation Analysis Summary**
 
 - **Y-BOCS Compulsion Score**: Weak negative correlation of **-0.071** with checking compulsions indicates that checking behaviors are linked to lower compulsion severity.  
 - **Benzodiazepines**:  
