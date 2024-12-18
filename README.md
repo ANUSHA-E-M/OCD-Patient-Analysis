@@ -1,4 +1,4 @@
-# OCD Patient Data Analysis
+![Screenshot (35)](https://github.com/user-attachments/assets/47f502b4-d476-407a-9dd1-f22bee8a68b8)# OCD Patient Data Analysis
 
 ## Table of Content
   - [Project Overview](#Project-Overview)
@@ -15,6 +15,7 @@
 This data analysis project is focused on uncovering insights in the trends associated with patients diagnosed with Obsession-Compulsion Disorder (OCD) through a detailed examination of a comprehensive dataset comprising 1500 individuals.
 The primary objective of this project is to analyse demographic and clinical characteristics that may influence the manifestaion and treatment of OCD.
 
+![Untitled design (2)](https://github.com/user-attachments/assets/d3447608-9c68-4022-bb17-95bb756f80b9)
 
 ### Data Scources
 
@@ -93,6 +94,8 @@ plt.grid()
 #plt.xticks(df_patient["OCD Diagnosis Date"].dt.year)
 plt.show()
 ~~~
+![Screenshot (35)](https://github.com/user-attachments/assets/db11fcbc-c52b-4255-9c72-51de51f853e3)
+
 
 #### Distribution of Obsession Type and Compulsion Type
 ~~~python
@@ -129,6 +132,8 @@ plt.legend()
 com_type.fig.subplots_adjust(top=0.75)
 plt.show()
 ~~~
+![Screenshot (36)](https://github.com/user-attachments/assets/e528732d-55b7-48ba-b477-7ac96da88efd)
+
 #### Variation of Y-BOCS Score across Ethnicity
 ~~~python
 #Grouping data by Ethnicity  
@@ -154,6 +159,9 @@ ethnicity_dist.style.format({
      {'selector': 'td', 'props': [('border', '1px solid black')]}]
 )
 ~~~
+![Screenshot (37)](https://github.com/user-attachments/assets/9682b36a-e334-40d2-9163-be7063e578bc)
+
+
 #### Statistical Analysis to find the Variation of Y-BOCS among Obsession and Compulsion Types
 ~~~python
 #perform the ANOVA for Obsession Score
@@ -176,6 +184,8 @@ print("\nResult of Post Hoc Testing for Compulsion Score:\n")
 tukey_results_com = pairwise_tukeyhsd(endog=df_patient['Y-BOCS Score (Compulsions)'], groups=df_patient['Compulsion Type'], alpha=0.05)
 print(tukey_results_com)
 ~~~
+![Screenshot (40)](https://github.com/user-attachments/assets/f2de55ac-49d8-46b5-9519-ac9fb1278d9b)
+
 **Conclusion**:
     - The Tukey HSD post-hoc analysis revealed a significant difference in compulsion score between the 'Checking' and 'Praying' group scoring higher. 
     - No meaningful differences among the other groups (Counting, Ordering and Washing)
@@ -220,6 +230,8 @@ sns.heatmap(filtered_corr, annot=True, fmt='.3f', cmap='coolwarm', square=True, 
 plt.title("Correlation Heatmap of Clinical Factors and Compulsion Scores\n")
 plt.show()
 ~~~
+![Screenshot (33)](https://github.com/user-attachments/assets/a53a7f8f-b776-4c3c-9d12-58990c90b6e1)
+
 **Correlation Analysis Summary**
 
 - **Y-BOCS Compulsion Score**: Weak negative correlation of **-0.071** with checking compulsions indicates that checking behaviors are linked to lower compulsion severity.  
