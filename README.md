@@ -34,5 +34,18 @@ In the initial data preparation phase, the following steps were performed:
         o Investigating the presence of other mental health disorders that often accompany OCD, such as anxiety disorders and depression, understanding these relationships can help in designing more comrehensive treatment plans.
 
 ### Data Analysis
-~~~python
+#Previous Diagnoses and Medications are having more missing values.
+#Create indicators for missing values before imputation
+df_patient["Previous Diagnosis Missing"]=df_patient["Previous Diagnoses"].isnull().astype(int)
+df_patient["Medications Missing"]=df_patient["Medications"].isnull().astype(int)
+
+#Fill missing values with mode as both are categorical data
+mode_medications=df_patient["Previous Diagnoses"].mode()[0]
+df_patient.fillna({"Previous Diagnoses": "Not Diagnosed"},inplace=True)
+
+mode_medications=df_patient["Medications"].mode()[0]
+df_patient.fillna({"Medications": mode_medications},inplace=True)
+
+#Apply one-hot encoding to the categorical variables
+df_patient_encoded=pd.get_dummies(df_patient,columns=["Previous Diagnoses","Medications"],drop_first=True)
   
