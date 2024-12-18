@@ -223,38 +223,32 @@ plt.show()
 - **Previous Diagnoses**: Weak negative correlation with MDD: **-0.087** indicates possible independent diagnoses, with significant overlaps (-0.25 to -0.27) among other conditions.
   
 ### Findings
-KEY FINDINGS AND THEIR SIGNIFICANCE:
+#### KEY FINDINGS AND THEIR SIGNIFICANCE:
 
-1. Prevalence of Symptoms:
-    - Y-BOCS Scores indicate that the average scores for obsessions (20.1) and compulsions (19.6) show significant levels of distress in OCD patients. The high standard deviation (11.78) suggests considerable variability among individuals, highlighting the need for tailored treatment plans.
+**1. Prevalence of Symptoms**:
+    - Y-BOCS Scores indicate that the average scores for obsessions **(20.1)** and compulsions **(19.6)** show **significant levels of distress** in OCD patients. The high standard deviation (11.78) suggests considerable variability among individuals, highlighting the **need for tailored treatment plans**.
     - Significance: This variability is cruicial for clinicians as it emphasized treatment strategies. It shows that common treatment protocols may not be effetive for all patients.
 
-2. Correlation Among Variables:
-    - The "negative correlations" observed between types of compulsions imply that individuals exhibiting one type of symtoms are less likely to display another.For instance, the significant negative correlation among compulsion types (-0.23 to -0.27) and obsession types (-0.24 to -0.27) indicates distict symptoms presentations within OCD.
+**2. Correlation Among Variables**:
+    - The **"negative correlations"** observed between types of compulsions imply that individuals exhibiting one type of symtoms are less likely to display another.For instance, the significant negative correlation among **compulsion types (-0.23 to -0.27)** and **obsession types (-0.24 to -0.27)** indicates **distict symptoms** presentations within OCD.
     - Significance: Understanding these patterns can help in refining treatment approaches by targeting specific symptoms, which could improve treatment efficacy.
 
-3. Influence of Medications:
-    - The "strong negative correlation" between Benzodiazepines and SNRIs/SSRIs indicates that patients taking benzodiazepines are less likely to be on these antidepressants simultaneously. This could that clinicians need to navigate thoughtfully.
+**3. Influence of Medications**:
+    - The **"strong negative correlation"** between **Benzodiazepines and SNRIs/SSRIs** indicates that patients taking benzodiazepines are less likely to be on these antidepressants simultaneously. This could that clinicians need to navigate thoughtfully.
     - Significance: These findings can guide prescribing practices and highlight areas where further education regarding medication management is needed.
 
-4. Demographic Insights:
-    - There is relatively balanced gender representation among OCD patients, and differences in Y-BOCS scores with age and gender suggest variations in symptom severity. For instance, older women reported higher obsession severity.
+**4. Demographic Insights**:
+    - There is **relatively balanced** gender representation among OCD patients, and differences in Y-BOCS scores with age and gender suggest variations in symptom severity. For instance, **older women reported higher obsession severity**.
     - Significance:This findings underlines the necessity for age and gender specific therapeutic strategies, recognizing how demographic factors can influence symptoms expression.
-5. Previous Diagnoses:
-    - The significant negative correlations among previous diagnoses (GAD,MDD,PTSD) suggest that having one diagnosis could preclude the occurence of another.
+**5. Previous Diagnoses**:
+    - The significant **negative correlations** among **previous diagnoses (GAD,MDD,PTSD)** suggest that having one diagnosis could preclude the occurence of another.
     - Significance: This calls for clear diagnostic criteria and an understanding that comorbidity might not be as common as preceived. It helps in refining assessment protocols.
 
-6. Family History:
-    - Patients with a family history of OCD show higher mean Y-BOCS scores for obsessions, although the statistical significance is borderline.
+**6. Family History**:
+    - Patients **with** a family history of OCD **show higher mean Y-BOCS scores for obsessions**, although the statistical significance is borderline.
     - Significant : This points towards potential genetic or environmental factors influencing OCD severity, which should be factored into clinical assessments.
 
-### Recommandation
-Here’s a concise version with three to four prioritized recommendations based on the findings:  
-
----
-
-### **Recommendations**  
-
+### Recommandations
 1. **Personalized Treatment Plans**  
    - **Finding:** High variability in Y-BOCS scores indicates significant differences in symptom severity among patients.  
    - **Recommendation:** Clinicians should adopt individualized treatment strategies tailored to specific symptoms (obsessions or compulsions) rather than relying solely on standardized protocols.  
@@ -271,3 +265,9 @@ Here’s a concise version with three to four prioritized recommendations based 
    - **Finding:** A strong negative correlation between Benzodiazepines and SNRIs/SSRIs highlights distinct prescribing trends.  
    - **Recommendation:** Provide clinicians with updated guidelines to navigate medication combinations more effectively and ensure optimal treatment outcomes.  
 
+### Limitations
+1. **Small Sample Size**  
+   - The dataset of 1,500 patients limits the ability to generalize findings across diverse populations and accurately represent the full spectrum of OCD symptoms and treatment responses.  
+
+2. **Lack of Longitudinal and Socioeconomic Data**  
+   - The absence of long-term and socioeconomic data restricts insights into symptom progression, treatment outcomes, and disparities in healthcare access.  
